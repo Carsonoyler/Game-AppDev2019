@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class SpinPropellerX : MonoBehaviour
 {
-	private float rotationSpeed = 100f;
+	private float rotationSpeed = 200f;
     
     // Update is called once per frame
     void FixedUpdate()
