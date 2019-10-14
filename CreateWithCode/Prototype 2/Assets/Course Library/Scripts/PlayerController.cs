@@ -8,6 +8,8 @@ public float horizontalInput;
 public float speed = 15f;
 public float xRange = 20.0f;
 
+public GameObject projectilePrefab;
+
 
     // Update is called once per frame
     void Update()
@@ -22,13 +24,13 @@ public float xRange = 20.0f;
         transform.position = new Vector3(xRange, transform.position.y, transform.position.z);
     }
     
-        //i(transform.position.x < -10)
-        //{
-        //transform.position = new Vector3()
-        //}
         horizontalInput = Input.GetAxis("Horizontal");
         
         transform.Translate(Vector3.right * Time.deltaTime * horizontalInput * speed);
         
+        if(Input.GetKeyDown(KeyCode.Space))
+        {
+            Instantiate(projectilePrefab, transform.position, projectilePrefab.transform.rotation);
+        }
     }
 }
