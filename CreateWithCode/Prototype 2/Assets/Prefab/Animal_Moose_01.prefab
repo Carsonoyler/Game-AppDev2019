@@ -431,7 +431,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4413320490374536918}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
   m_LocalPosition: {x: 16.47, y: 0.19, z: -0.43}
   m_LocalScale: {x: 11, y: 11, z: 11}
   m_Children:
@@ -447,7 +447,7 @@ Transform:
   - {fileID: 4413320490374839218}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!95 &4413320490365081032
 Animator:
   serializedVersion: 3
@@ -491,7 +491,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a35148afe889545f38baeba1b6eb404d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 40
+  speed: 5
 --- !u!1 &4413320490374538094
 GameObject:
   m_ObjectHideFlags: 0
@@ -664,6 +664,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4413320490374791574}
   - component: {fileID: 4413320490369231654}
+  - component: {fileID: 4961459994821407938}
   m_Layer: 0
   m_Name: SM_Moose_Male_01
   m_TagString: Untagged
@@ -735,6 +736,19 @@ SkinnedMeshRenderer:
     m_Center: {x: 0.000000014901161, y: 0.045301065, z: 0.16266179}
     m_Extent: {x: 0.10332231, y: 0.2796877, z: 0.26338276}
   m_DirtyAABB: 0
+--- !u!65 &4961459994821407938
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4413320490374557226}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.2066446, y: 0.55937535, z: 0.52676547}
+  m_Center: {x: 0.000000014901159, y: 0.045301028, z: 0.16266176}
 --- !u!1 &4413320490374576066
 GameObject:
   m_ObjectHideFlags: 0
