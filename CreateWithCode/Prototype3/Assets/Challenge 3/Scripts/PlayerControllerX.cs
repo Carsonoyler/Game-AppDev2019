@@ -14,6 +14,7 @@ public class PlayerControllerX : MonoBehaviour
     public ParticleSystem fireworksParticle;
 
     private AudioSource playerAudio;
+    public AudioClip boingSound;
     public AudioClip moneySound;
     public AudioClip explodeSound;
 
@@ -62,6 +63,7 @@ public class PlayerControllerX : MonoBehaviour
         }
         else if(other.gameObject.CompareTag("Ground"))
         {
+            playerAudio.PlayOneShot(boingSound, 1.0f);
             playerRb.AddForce(Vector3.up * 5, ForceMode.Impulse);
         }
         else if(other.gameObject.CompareTag("Sky"))
