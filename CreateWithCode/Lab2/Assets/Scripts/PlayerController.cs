@@ -20,13 +20,13 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         //Makes the player move ledt and right, but not go off screen
-         if(transform.position.x < -8)
+         if(transform.position.x < -6)
         {
-            transform.position = new Vector3(-8, transform.position.y, transform.position.z);
+            transform.position = new Vector3(-6, transform.position.y, transform.position.z);
         }
-        if (transform.position.x > 18)
+        if (transform.position.x > 17)
         {
-            transform.position = new Vector3(18, transform.position.y, transform.position.z);
+            transform.position = new Vector3(17, transform.position.y, transform.position.z);
         }
         horizontalInput = Input.GetAxis("Horizontal");
 
